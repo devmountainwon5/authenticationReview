@@ -58,7 +58,7 @@ app.post('/auth/login', (req, res, next)=>{
     .then((isMatch)=>{
         // handle bad password
         if(!isMatch){
-            throw(`You're credentials don't match our records.`)
+            throw(`Your credentials don't match our records.`)
         }
         //prepare user for frontend
         delete catchUser.password
